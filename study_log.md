@@ -1,3 +1,8 @@
+## 2024/9/12
+
+デペンデンシーボット対応メモ作成。  
+[dependabot-alerts-memo1](/Github/Dependabot_alerts/dependabot-alerts-memo1.md)
+
 ## 2024/9/10
 
 R4秋午前のテスト終了。40/80。
