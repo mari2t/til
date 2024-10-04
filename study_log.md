@@ -1,3 +1,21 @@
+# Study Log
+
+## 2024/10/4
+
+Android Studio 日本語化。  
+その他下記を進めるも、まずファイル探しで戸惑う。  
+https://developer.android.com/codelabs/basic-android-kotlin-compose-first-app?hl=ja&authuser=1#4
+
+（解決）ファイル探しで戸惑ったのは、そもそも最初のプロジェクトテンプレの選択が間違っていた。  
+正　Empty Activity  
+誤　Empty Views Activity  
+原因　サイトだとEmpty Compose Activityを選択する記述だったが、それが無かったので、それらしいViewsが入ったものにした。
+
+## 2024/10/3
+
+Kotlinを追加。
+JavaScriptと似ている。
+
 ## 2024/10/3
 
 Kotlinを追加。
