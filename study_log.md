@@ -1,5 +1,9 @@
 # Study Log
 
+## 2024/10/5
+
+1. 初めての Android アプリを作成する-6.背景色を変更する　終了
+
 ## 2024/10/4
 
 Android Studio 日本語化。  
@@ -10,11 +14,6 @@ https://developer.android.com/codelabs/basic-android-kotlin-compose-first-app?hl
 正　Empty Activity  
 誤　Empty Views Activity  
 原因　サイトだとEmpty Compose Activityを選択する記述だったが、それが無かったので、それらしいViewsが入ったものにした。
-
-## 2024/10/3
-
-Kotlinを追加。
-JavaScriptと似ている。
 
 ## 2024/10/3
 
