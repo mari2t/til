@@ -1,5 +1,6 @@
 ## Kotlin の概要
 
+参考
 https://developer.android.com/courses/android-basics-compose/course?authuser=1&%3Bhl=ja&hl=ja
 
 ### 書き方
@@ -86,4 +87,64 @@ fun main() {
     speakerVolume = 5
     println(speakerVolume)  // 5
 }
+```
+
+- class の前にopen キーワードを追加すると拡張できる。
+- override キーワードは、Kotlinで親クラスのメソッドやプロパティを子クラスで再定義（上書き）するために使用される。
+
+```
+// 親クラス
+open class Animal {
+    open fun makeSound() {
+        println("Animal is making a sound")
+    }
+}
+
+// 子クラス
+class Dog : Animal() {
+    override fun makeSound() {
+        println("Dog is barking")
+    }
+}
+
+fun main() {
+    val animal: Animal = Animal()
+    val dog: Animal = Dog()
+
+    animal.makeSound()  // Animal is making a sound
+    dog.makeSound()     // Dog is barking
+}
+```
+
+- IS-A 関係
+  「犬は動物である」（Dog IS-A Animal）という関係では、  
+  Dog クラスは Animal クラスから特性や振る舞いを継承します。
+- HAS-A 関係
+  「車はエンジンを持っている」（Car HAS-A Engine）という関係では、  
+  Car クラスは Engine クラスのオブジェクトを含んでいることを示します。
+
+- super キーワード
+  親クラスのメソッドやプロパティを参照するために使用されます。
+
+```
+// 親クラス
+open class Animal {
+    open fun makeSound() {
+        println("Animal makes a sound")
+    }
+}
+
+// 子クラス
+class Dog : Animal() {
+    override fun makeSound() {
+        super.makeSound()  // 親クラスのメソッドを呼び出す
+        println("Dog barks")  // 子クラスの独自の処理
+    }
+}
+
+fun main() {
+    val dog = Dog()
+    dog.makeSound()
+}
+
 ```
