@@ -28,3 +28,9 @@ Scaffold {
 - 修飾子パラメータを渡す必要がある：  
   ColumnのようなレイアウトコンポーザブルにModifierを使って見た目や配置、サイズなどを調整するために  
   パラメータを渡すことを指します。
+
+- 画像を取り入れる  
+  tool→Resource Manager→Import drawables
+
+- QUALIFIER TYPE：Density
+- VALUE：No Density
