@@ -34,3 +34,9 @@ Scaffold {
 
 - QUALIFIER TYPE：Density
 - VALUE：No Density
+
+- リソースtypeごとに適切なフォルダに入れる  
+  https://developer.android.com/guide/topics/resources/available-resources?hl=ja&authuser=3
+
+- contentDescription = null  
+  背景は読み上げる必要はないのでTalkBack が Image コンポーザブルをスキップするために記述
