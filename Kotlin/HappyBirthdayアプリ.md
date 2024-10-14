@@ -40,3 +40,19 @@ Scaffold {
 
 - contentDescription = null  
   背景は読み上げる必要はないのでTalkBack が Image コンポーザブルをスキップするために記述
+
+- Box コンポーザブルで囲む  
+  単語を右クリック→コンテキストアクションの表示→Surround with wedged→Surround with container
+- ContentScale.Crop  
+  画像の幅と高さが、それぞれ画面の幅と高さと等しいかそれ以上になるように、  
+  アスペクト比を維持しながら均等に画像を拡大
+
+- alpha：画像の不透明度設定　例）alpha = 0.5F
+
+- ハードコードされた文字列の問題点
+
+  1. アプリを他の言語に翻訳するのが難しくなる。
+  2. アプリの文字列を別の場所で再利用するのが難しくなる。
+
+  (解決策)単語マウスオーバー→電球→Extract Resourceで変数名と値を保存できる  
+  保存場所はapp > res > values > strings.xml
