@@ -1,5 +1,11 @@
 # Study Log
 
+## 2024/10/15
+
+1. Aインタラクティブな Dice Roller アプリを作成する- 7. サイコロを振るロジックを作成する 終了
+2. code,split,design非表示エラー。  
+   AndroidStudioを再起動すると表示された。
+
 ## 2024/10/14
 
 1. Android アプリに画像を追加する-終了
