@@ -1,5 +1,11 @@
 # Study Log
 
+## 2024/11/25
+
+1. APIStudyフォルダ追加（APIだと特定のフォルダ画像になってしまうのでこの名前にした）
+2. j-quantsのAPIの操作のためmdを作成
+3. postmanを久々に使った
+
 ## 2024/10/19
 
 1. PowerAutomateで検索を自動化する試み。
