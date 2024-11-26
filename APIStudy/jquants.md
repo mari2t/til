@@ -20,4 +20,5 @@ raw選択→
 
 ### IDトークン取得
 
-https://jpx.gitbook.io/j-quants-ja/api-reference/idtoken
+https://jpx.gitbook.io/j-quants-ja/api-reference/idtoken  
+postmanで受信確認
