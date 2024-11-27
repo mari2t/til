@@ -3,7 +3,7 @@
 ## 2024/11/27
 
 1. セキュリティ勉強のためTryHackMe登録。  
-   [SevenDaysHack1](/セキスペ\SevenDaysHack1.md)
+   [SevenDaysHack1](/セキスペ/SevenDaysHack1.md)
 2. KaliのDLがなかなか終わらないので今日はここまで。
 
 ## 2024/11/26
