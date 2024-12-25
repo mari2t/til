@@ -1,5 +1,11 @@
 # Study Log
 
+## 2024/12/25
+
+1.  Kali、VirtualBoxのインストールとKali起動。  
+    終了は✕ボタンで選択できたので、電源を落とすにした。  
+    [SevenDaysHack1.md](/セキスペ/SevenDaysHack1.md)
+
 ## 2024/12/21
 
 1. 調べたこと追記  
