@@ -9,13 +9,13 @@
 
 ## メモ
 
-### TryHackMe
+### ハッキング練習サイト：TryHackMe
 
 登録。  
 JobTitle等質問あり。  
 My LearningはCyber Security 101からスタート。
 
-### Kali
+### カリKaliとは？
 
 VirtualMachineはVirtualBoxを選択。  
 ペネトレーションテスト（侵入テスト）やセキュリティ監査のために設計された  
@@ -26,13 +26,46 @@ Debianベースで開発されており、Offensive Securityによってメン�
 　および関連サービスを提供する企業。  
 　特にセキュリティ専門家や研究者向けに有名なトレーニングや資格認定（OSCP）を行っている。
 
-### VirtualBox
+### 仮想マシン：VirtualBox
 
 オラクル社が提供するオープンソースの仮想化ソフトウェア。  
 これにより、1台の物理コンピューター（ホストOS）上で  
 複数の仮想コンピューター（ゲストOS）を動作させることができる。
 
-### Kali起動
+### 起動：Kali
 
 初期設定のIDとパスでログイン。  
 ウィンドウの中にデスクトップが表示されている。
+
+### 起動エラー：Kali
+
+#### エラー
+
+```
+[  2.7053541] umwgfx 0000:00:02.0: [drm] *ERROR* umwgfx seems to be running on an unsupported hypervisor.
+[  2.705357]  umwgfx 0000:00:02.0: [drm] *ERROR* This configuration is likely broken.
+[  2.705359]  umwgfx 0000:00:02.0: [drm] *ERROR* Please switch to a supported graphics device to avoid problems.
+
+BusyBox v1.37.0 (Debian 1:1.37.0-4) built-in shell (ash)
+Enter 'help' for a list of built-in commands.
+```
+
+#### 調べたこと
+
+**[ 2.7053541]**：システムが起動してからエラーメッセージが発生するまでの経過時間を秒単位で示している  
+**umwgfx**：仮想化環境で使用されるグラフィックスドライバー  
+**0000:00:02.0**：PCIデバイスアドレス  
+**[drm]**：Direct Rendering Managerの略で、Linuxカーネルでディスプレイのレンダリングを管理するコンポーネント。
+ディスプレイデバイスやグラフィックドライバーが正常に動作していないことを示すエラーが発生した際にこのタグが付く。  
+※PCI（Peripheral Component Interconnect） は、コンピュータのマザーボード上で拡張カードや周辺機器を接続するための標準的なインターフェース規格の1つ
+
+#### やったこと
+
+一度Kaliの電源を落としてから設定→ディスプレイ→スクリーン→グラフィックコントローラーで下記変更した。  
+この後起動したらログイン画面になり、昨日と同様に起動できた。  
+変更前 VMSVBA  
+変更後 VBoxSVGA
+
+### ターミナルnano
+
+終わるときはFileからQuitで終了できた
