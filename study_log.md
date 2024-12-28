@@ -1,8 +1,13 @@
 # Study Log
 
+## 2024/12/28
+
+1.  Kaliのupdate。パスワード変更まで。  
+    [SevenDaysHack1.md](/セキスペ/SevenDaysHack1.md)
+
 ## 2024/12/27
 
-1.  Kaliを起動したときにエラーがでた。解決した。nano操作まで。
+1.  Kaliを起動したときにエラーがでた。解決した。nano操作まで。  
     [SevenDaysHack1.md](/セキスペ/SevenDaysHack1.md)
 
 ## 2024/12/26
